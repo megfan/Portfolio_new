@@ -39,26 +39,7 @@ body{
     max-width: var(--container);
     margin: 0 auto; 
 } */
-@media only screen and (max-width: 1600px) {
-    :root{--container: 1000px;}
-    
-  }
-  @media only screen and (max-width: 1200px) {
-    :root{--container: 800px;}
-    
-    h1{color:red;}
-    .header_title_first{color:yellow;}   
-}
-  @media (max-width: 900px) {
-    :root{--container: 300px;}
-    .logo{width: 4em !important;}
-    .header_title{grid-column: col-start 1 / col-end 4 !important;}
-    .header_title_first{color:red; font-size: 5rem;}
-    .deco_line{padding: .2px 30px !important;}
-    .deco_title{grid-column: 1 !important;}
-    .about_text{grid-column: 1 / 5 !important;}
-    .about_h1{font-size: 3rem !important;}
-}
+
 /*grid_________*/
 .grid{
     position: fixed;
@@ -177,6 +158,7 @@ h1{
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 1.2;
+    margin-right: 16rem;
 }
 .scroll{
     grid-row: 3;
@@ -366,7 +348,7 @@ h1{
     background-color: transparent;
     background-position: center;
     background-size: cover;
-    transition: all .6s ease-out;
+    transition: all .8s ease-out;
     z-index: 2;
     transform: scale(1);
 }
@@ -375,7 +357,7 @@ h1{
     max-width: 100%;
     display: block;
 }
-.project:hover .project__image {transform: scale(1.1);}
+.project:hover .project__image {transform: scale(1.04);}
 /* .project:hover .project_deco_line{
     background: var(--primary);
 } */
@@ -394,7 +376,7 @@ h1{
 .project:hover .one::after{
     bottom: 3rem;
     right: -4rem;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 .two::after{
     content: "";
@@ -405,12 +387,12 @@ h1{
     right: 3rem;
     background: transparent;
     border: 1px solid var(--light-secondary);
-    transition: all .6s ease-out;
+    transition: all .8s ease-out;
 }
 .project:hover .two::after{
     bottom: -3rem;
     right: 4rem;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 /* .project:hover .project__image:after { opacity: 1; } */
 .project__detail {
@@ -437,12 +419,34 @@ h1{
     font-size: 3rem;
     color: var(--grey);
     font-family: Neuton;
-    transition: all .2s ease-out;
+    transition: all .3s ease-out;
+    margin-right: 0;
+}
+.project__title:hover::before {
+    right: -15%;
+}
+.project:hover .project__title::before{
+    visibility: visible;
 }
 .project__title:hover{
-    cursor: pointer;
-    transform: translateX(2rem);
+    transform: translateX(1rem) !important;
+    transition-delay: -.2s !important;
     color: var(--dark-primary);
+    cursor: pointer;
+}
+.project__title::before{
+    visibility: hidden;
+    content: '';
+    position: absolute;
+    right: -15%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    width: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid var(--primary);
+    transition: all .5s ease-out;
 }
 .project__category {
     font-family: Lato;
@@ -579,6 +583,46 @@ footer{
     color: var(--grey);
     margin: 2rem 0 2rem 2rem;
 }
+
+/* Media Queries _________________*/
+@media only screen and (max-width: 1600px) {
+    :root{--container: 1000px;}
+    .header_title{grid-column: col-start 2 / col-end 4;}
+    .deco_title, .about_text{grid-column: 2/5;}
+}
+@media only screen and (max-width: 1200px) {
+    :root{--container: 800px;}
+    /* .header_title{grid-column: col-start 1 / col-end 4;} */
+    h1{color:red; }  
+    .logo{position: relative;}
+    .header_title h2{margin-right: 0;}
+    .scroll{grid-column: 1;}
+
+    .deco_line{display: none;}
+    .header_title, .deco_title, .about_text, .btn_about{grid-column: 1/5; margin-left: 0;}
+    
+}
+@media (max-width: 900px) {
+    /* body{width: 110vw;} */
+    .container{display: none;}
+    section{padding: 0 4rem;}
+    .logo{width: 4em;}
+    .menu{display: none;}
+    .header_title{grid-column: col-start 1 / col-end 4;}
+    .header_title_first{color:red; font-size: 5rem;}
+    .deco_line{padding: .2px 30px;}
+    .deco_title{grid-column: 1;}
+    .about_text{grid-column: 1 / 5;}
+    .about_h1{font-size: 3rem;}
+}
+@media only screen and (max-width: 512px) {
+    .header_title_first{font-size: 4rem; } 
+    body{grid-template-rows: 100vh 100vh repeat(3, auto) 10vh 0px;}
+    .about_sec{grid-template-rows: 5vh 30px repeat(2,auto);}
+    .btn_about{display: block;}
+    .btn_item{margin-bottom: 2rem;}
+}
+
 /* .img {
     height: 30rem;
     width: 50rem;

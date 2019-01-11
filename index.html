@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
     <title>Meg_portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neuton:300,400,700,800" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,8 +24,8 @@
             </ul>
         </nav>
         <div class="header_title">
-            <h1 class="header_title_first">Designer & Front-end Developer <br /> from Warsaw, Poland.</h1>
-            <h2 class="header_title_second">Hello, I'm Meg! I design and code beautifully simple things, and I love what I do.</h2>
+            <h1 class="header_title_first" data-aos="fade-left" data-aos-duration="1500">Designer & Front-end Developer <br /> from Warsaw, Poland.</h1>
+            <h2 class="header_title_second" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">Hello, I'm Meg! I design and code beautifully simple things, and I love what I do.</h2>
         </div>
         <div class="scroll">
             <p>Scroll or die</p>
@@ -35,10 +37,10 @@
         <div class="deco_line"></div>
         <div class="deco_title">About</div>
         <div class="about_text">
-            <h1 class="about_h1">
+            <h1 class="about_h1" data-aos="fade-left" data-aos-duration="800">
                 Constantly moving and ready to experiment with new things.
             </h1>
-            <p class="text">
+            <p class="text" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
                 Hi! I'm Meg, junior frontend developer & senior graphic designer from Warsaw.
                 Over the past eight years, I've had the pleasure of working with a wide variety of brands across the entertainment, automotive and financial industries.
                 agencies, consulted for startups,
@@ -48,8 +50,8 @@
             </p>
         </div>
         <div class="btn_about">
-            <div class="btn_item resume">View Resume &raquo;</div>
-            <div class="btn_item LinkedIn">View on LinkedIn &raquo;</div>
+            <div class="btn_item resume" data-aos="fade-left" data-aos-delay="800" data-aos-duration="800">View Resume &raquo;</div>
+            <div class="btn_item LinkedIn" data-aos="fade-left" data-aos-delay="1100" data-aos-duration="800">View on LinkedIn &raquo;</div>
         </div>  
       </div>
   </section>
@@ -59,115 +61,113 @@
             <div class="deco_line sec3"></div>
             <div class="deco_title sec3_text">Recent Work</div>
             <div class="about_text">
-                <h1 class="about_h1">
+                <h1 class="about_h1" data-aos="fade-left" data-aos-duration="800">
                     Here are a few recent projects.
                 </h1>
             </div>   
              <div class="work_card ">
                     <div class="project">
-                        <div class="project__card one">
-                            <a href="https://megfan.github.io/NaHalna_project/" class="project__image">
+                        <div class="project__card one" data-aos="fade-left" data-aos-duration="1500" >
+                            <a href="https://megfan.github.io/NaHalna_project/" target="_blank" class="project__image">
                                 <img src="./img/g2.png" alt="">
                             </a>                           
                         </div>
                         <div class="project__detail one_detail">                 
-                            <div class="project_deco_line"></div>
-                            <h2 class="project__title" onclick="window.open('http://google.pl', '_blank');">NaHalna</h2>
-                            <small class="project__category">
-                                    HTML5 /
-                                    SASS /
-                                    JS /
-                                    jQuery /
-                                    Scroll Magic
+                            <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000" ></div>
+                            <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onclick="window.open('http://google.pl', '_blank');">
+                                NaHalna</h2>
+                            <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                                    HTML5 / SASS / JS / jQuery / Scroll Magic
                                 </small>
-                            <div class="btn_item_project"> <a href="https://github.com/megfan/NaHalna_project">View Code &raquo;</a></div>
+                            <div class="btn_item_project" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                                <a href="https://github.com/megfan/NaHalna_project" >View Code &raquo;</a></div>
                         </div>
                     </div>
                     <div class="project">
-                            <div class="project__card two">
+                            <div class="project__card two" data-aos="fade-left" data-aos-duration="1500">
                                 <a href="" class="project__image">
                                     <img src="./img/g5.png" alt="">
                                 </a>                           
                             </div>
                             <div class="project__detail two_detail">                 
-                                <div class="project_deco_line"></div>
-                                <h2 class="project__title">Weather App</h2>
-                                <small class="project__category">
+                                <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                                <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onclick="window.open('http://google.pl', '_blank');">Weather App</h2>
+                                <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                                         ReactJS / Html5 / CSS / axios
                                     </small>
-                                <div class="btn_item_project">View Code &raquo;</div>
+                                <div class="btn_item_project"><a href="https://github.com/megfan/NaHalna_project" >View Code &raquo;</a></div>
                             </div>
                     </div>
                     <div class="project">
-                        <div class="project__card one">
+                        <div class="project__card one" data-aos="fade-left" data-aos-duration="1500">
                             <a href="" class="project__image">
                                 <img src="./img/g1.png" alt="">
                             </a>                           
                         </div>
                         <div class="project__detail one_detail">                 
-                            <div class="project_deco_line"></div>
-                            <h2 class="project__title">React Quiz</h2>
-                            <small class="project__category">
+                            <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                            <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onclick="window.open('http://google.pl', '_blank');">React Quiz</h2>
+                            <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                                     ReactJS / React Router / API Fetching / Sass / animateScroll
                                 </small>
-                            <div class="btn_item_project">View Code &raquo;</div>
+                            <div class="btn_item_project"><a href="https://github.com/megfan/NaHalna_project" >View Code &raquo;</a></div>
                         </div>
                     </div>
                     <div class="project">
-                        <div class="project__card two">
+                        <div class="project__card two" data-aos="fade-left" data-aos-duration="1500">
                             <a href="" class="project__image">
                                 <img src="./img/g6.png" alt="">
                             </a>                           
                         </div>
                         <div class="project__detail two_detail">                 
-                            <div class="project_deco_line"></div>
-                            <h2 class="project__title">PixaBay Finder</h2>
-                            <small class="project__category">
+                            <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                            <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onclick="window.open('http://google.pl', '_blank');">PixaBay Finder</h2>
+                            <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                                     ReactJS / Material UI / RDialog box / PixaBay API / Axios
                                 </small>
-                            <div class="btn_item_project">View Code &raquo;</div>
+                            <div class="btn_item_project"><a href="https://github.com/megfan/NaHalna_project" >View Code &raquo;</a></div>
                         </div>
                     </div>
                     <div class="project">
-                        <div class="project__card one">
+                        <div class="project__card one" data-aos="fade-left" data-aos-duration="1500">
                             <a href="" class="project__image">
                                 <img src="./img/g4.png" alt="">
                             </a>                           
                         </div>
                         <div class="project__detail one_detail">                 
-                            <div class="project_deco_line"></div>
-                            <h2 class="project__title">Advanced_CSS_Course</h2>
-                            <small class="project__category">
+                            <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                            <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onclick="window.open('http://google.pl', '_blank');">Advanced_CSS_Course</h2>
+                            <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                                     HTML5 / CSS3 / SCSS
                                 </small>
-                            <div class="btn_item_project">View Code &raquo;</div>
+                            <div class="btn_item_project"><a href="https://github.com/megfan/NaHalna_project" >View Code &raquo;</a></div>
                         </div>
                     </div>
                     <div class="project">
-                        <div class="project__card two">
+                        <div class="project__card two" data-aos="fade-left" data-aos-duration="1500">
                             <a href="" class="project__image">
                                 <img src="./img/g7a.png" alt="">
                             </a>                           
                         </div>
                         <div class="project__detail two_detail">                 
-                            <div class="project_deco_line"></div>
-                            <h2 class="project__title">Shopping Cart</h2>
-                            <small class="project__category">Java Script</small>
-                            <div class="btn_item_project">View Code &raquo;</div>
+                            <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                            <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onclick="window.open('http://google.pl', '_blank');">Shopping Cart</h2>
+                            <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">Java Script</small>
+                            <div class="btn_item_project"><a href="https://github.com/megfan/NaHalna_project" >View Code &raquo;</a></div>
                         </div>
                     </div>
                     <div class="project">
-                        <div class="project__card one">
+                        <div class="project__card one" data-aos="fade-left" data-aos-duration="1500">
                             <a href="" class="project__image">
                                 <img src="./img/g3.png" alt="">
                             </a>                           
                         </div>
                         <div class="project__detail one_detail">                 
-                            <div class="project_deco_line"></div>
-                            <h2 class="project__title">Make Up Yourself</h2>
-                            <small class="project__category">html / CSS / jQuery / Java Script
+                            <div class="project_deco_line" data-aos="fade-right" data-aos-duration="1000"></div>
+                            <h2 class="project__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onclick="window.open('http://google.pl', '_blank');">Make Up Yourself</h2>
+                            <small class="project__category" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">html / CSS / jQuery / Java Script
                                 </small>
-                            <div class="btn_item_project">View Code &raquo;</div>
+                            <div class="btn_item_project"><a href="https://github.com/megfan/NaHalna_project" >View Code &raquo;</a></div>
                         </div>
                     </div>
                     
@@ -256,7 +256,10 @@
           </div>
       </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src='3D-Interactive-Image-Hover-Effect-With-jQuery-CSS3-hover3d/source/js/jquery.hover3d.js'></script>
-
+    <!-- <script src='3D-Interactive-Image-Hover-Effect-With-jQuery-CSS3-hover3d/source/js/jquery.hover3d.js'></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="js/app.js"></script>
 </body>
