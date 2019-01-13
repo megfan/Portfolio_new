@@ -1,3 +1,16 @@
+
+($(window).on('load', function() {
+    $(document).scrollTop(0);
+    
+    setTimeout(
+        function() {
+            console.log("sdsdsdsdsdth");
+            $("#loader_sec").addClass("fade-up");
+            $(document).scrollTop(0);
+        }, 3000);
+}))();
+
+
 // $(".project").hover3d({
 //     selector: ".project__card",
 //     shine: false,
@@ -36,6 +49,11 @@
 //   listMenu[0].addEventListener('click', function(){
 //     window.scrollTo(300, 500); 
 //   })
+
+
+
+//scrolllll_______________
+
   $('.list_item:nth-child(1)').on('click', function(event) {
     var target = $('.sec_2');
     if( target.length ) {
@@ -76,7 +94,7 @@ function wheel(event) {
 
 function handle(delta) {
     var time = 1000;
-    var distance = 400;
+    var distance = 800;
 
     $('html, body').stop().animate({
         scrollTop: $(window).scrollTop() - (distance * delta)
