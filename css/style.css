@@ -39,15 +39,20 @@ main-container{
     width: 10px;
     border-radius: 50%;
     transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
   }
   
   .cursor:nth-child(1) {
-    background-color: #E74C3C;
-    z-index: 1;
+    background-color: var(--primary);
+    z-index: 201;
   }
-  
+
   .cursor:nth-child(2) {
-    background-color: #fff;
+    background-color: var(--light-secondary);
+    height: 20px;
+    width: 20px;
+    z-index: 200;
+    opacity: .4;
   }
 #loader_sec{
     height: 100vh;
@@ -67,12 +72,12 @@ main-container{
 }
 .pre-container{
     width: 70px;
-  height: 35px;
-  overflow: hidden;
-  position: absolute;
-  top: calc(50% - 17px);
-  left: calc(50% - 35px);
-  background-color: var(--primary);
+    height: 35px;
+    overflow: hidden;
+    position: absolute;
+    top: calc(50% - 17px);
+    left: calc(50% - 35px);
+    background-color: var(--primary);
 }
 #loader {
     width: 70px;
@@ -397,6 +402,7 @@ h1{
 .work_card{
     grid-row:4;
     grid-column: 1/5;
+    z-index: 3;
 }
 
 .img_one{background-image: url('../img/g1.png');}

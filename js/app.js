@@ -1,4 +1,19 @@
-
+$(window).mousemove(function(e) {
+    $('.cursor')
+      .eq(0)
+      .css({
+        left: e.pageX,
+        top: e.pageY
+      });
+    setTimeout(function() {
+      $('.cursor')
+        .eq(1)
+        .css({
+          left: e.pageX,
+          top: e.pageY
+        });
+    }, 300);
+});
 ($(window).on('load', function() {
     $(document).scrollTop(0);
     
@@ -9,6 +24,13 @@
             $(document).scrollTop(0);
         }, 3000);
 }))();
+
+//cursor_______
+
+
+
+
+
 
 
 // $(".project").hover3d({
