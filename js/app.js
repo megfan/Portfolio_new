@@ -12,7 +12,7 @@ $(window).mousemove(function(e) {
           left: e.pageX,
           top: e.pageY
         });
-    }, 300);
+    }, 100);
 });
 ($(window).on('load', function() {
     $(document).scrollTop(0);
