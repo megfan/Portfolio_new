@@ -9,14 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Neuton:300,400,700,800" rel="stylesheet"> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-crossorigin="anonymous">
+crossorigin="anonymous"> -->
 </script>
 </head>
 <body>
-        <div class="cursor"></div>
-        <div class="cursor"></div>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
   <section id='loader_sec'>
         <div class="pre-container">          
             <div id="loader"></div>
@@ -32,9 +33,9 @@ crossorigin="anonymous">
                 <img src="./img/2.png" alt="Logo" class="logo"/>
             </a>
             <ul class="menu">
-                <li class='list_item s'>who</li>
-                <li class='list_item s'>work</li>
-                <li class='list_item s'>Say Hi</li>
+                <li class='menu_item'>who</li>
+                <li class='menu_item'>work</li>
+                <li class='menu_item'>Say Hi</li>
             </ul>
         </nav>
         <div class="header_title">
@@ -64,8 +65,8 @@ crossorigin="anonymous">
             </p>
         </div>
         <div class="btn_about">
-            <div class="btn_item resume" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">View Resume &raquo;</div>
-            <div class="btn_item LinkedIn" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">View on LinkedIn &raquo;</div>
+            <div class="btn_item resume" onclick="window.open('./img/M.StaszewskaCV_2018.pdf', '_blank');" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">View Resume &raquo;</div>
+            <div class="btn_item LinkedIn" onclick="window.open('https://www.linkedin.com/in/margaretsta' , '_blank');" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">View on LinkedIn &raquo;</div>
         </div>  
       </div>
   </section>

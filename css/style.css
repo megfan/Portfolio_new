@@ -4,13 +4,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    border: 0;
+    
 }
 html{
     font-size: 62.5%; /*1 rem = 10px; 10px/16px = 62.5% */
 }
-/* body {
-    cursor: url('../img/dot-single.svg'), auto;	
-  } */
+body {
+    cursor: none;
+  }
   
 body{
     font-family: "Lato", sans-serif;
@@ -381,11 +383,9 @@ h1{
 /*Work_________*/
 .sec_3{
     background-color: white;
-    z-index: 5;
 }
 .sec3{
     background-color: var(--light-secondary);
-    z-index: 5
 }
 .sec3_text{
     color: var(--light-secondary);
