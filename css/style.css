@@ -213,7 +213,6 @@ nav{
 .logo{
     width: 6em;
     grid-column: 1;
-    position: fixed;
     z-index: 30;
 }
 .menu{
