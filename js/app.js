@@ -22,7 +22,6 @@ $(window).on('load', function() {
     console.log($('.sec_2'));
     setTimeout(
         function() {
-            console.log("sdsdsdsdsdth");
             $("#loader_sec").addClass("fade-up");
             $(document).scrollTop(0);
         }, 2000);
@@ -59,25 +58,19 @@ $('.menu_item:nth-child(3)').on('click', function(event) {
     }
 });
 
-function wheel(event) {
-    var delta = 0;
-    if (event.wheelDelta) {(delta = event.wheelDelta / 120);}
-    else if (event.detail) {(delta = -event.detail / 3);}
+// function wheel(event) {
+//     window.scrollLeft = event;
+// }
 
-    handle(delta);
-    if (event.preventDefault) {(event.preventDefault());}
-    event.returnValue = false;
-}
+// function handle(delta) {
+//     var time = 1000;
+//     var distance = 800;
 
-function handle(delta) {
-    var time = 1000;
-    var distance = 800;
+//     $('html, body').stop().animate({
+//         scrollTop: $(window).scrollTop() - (distance * delta)
+//     }, time );
+// }
 
-    $('html, body').stop().animate({
-        scrollTop: $(window).scrollTop() - (distance * delta)
-    }, time );
-}
-
-if (window.addEventListener) {window.addEventListener('DOMMouseScroll', wheel, false);}
-  window.onmousewheel = document.onmousewheel = wheel;
+// if (window.addEventListener) {window.addEventListener('DOMMouseScroll', wheel(100), false);}
+//   window.onmousewheel = document.onmousewheel = wheel(100);
 

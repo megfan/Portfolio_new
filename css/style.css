@@ -11,7 +11,7 @@ html{
     font-size: 62.5%; /*1 rem = 10px; 10px/16px = 62.5% */
 }
 body {
-    cursor: none;
+    /* cursor: none; */
   }
   
 body{
@@ -710,6 +710,16 @@ footer{
     color: var(--grey);
 }
 
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
 /* Media Queries _________________*/
 @media only screen and (max-width: 1600px) {
     :root{--container: 1000px;}
@@ -739,13 +749,12 @@ footer{
     .footer_box{grid-column: 3/5;}
 }
 @media (max-width: 900px) {
-    /* body{width: 110vw;} */
     .container{display: none;}
     section{padding: 0 4rem;}
     .logo{width: 4em;}
     .menu{display: none;}
     .header_title{grid-column: col-start 1 / col-end 4;}
-    .header_title_first{color:red; font-size: 5rem;}
+    .header_title_first{font-size: 5rem;}
     .deco_line{padding: .2px 30px;}
     .deco_title{grid-column: 1;}
     .about_text{grid-column: 1 / 5;}
