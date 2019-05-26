@@ -18,8 +18,6 @@ $(window).mousemove(function(e) {
 
 $(window).on('load', function() {
     $(document).scrollTop(0);
-    console.log($('.menu_item:nth-child(1)'));
-    console.log($('.sec_2'));
     setTimeout(
         function() {
             $("#loader_sec").addClass("fade-up");
