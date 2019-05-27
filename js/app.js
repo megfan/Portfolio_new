@@ -56,19 +56,4 @@ $('.menu_item:nth-child(3)').on('click', function(event) {
     }
 });
 
-// function wheel(event) {
-//     window.scrollLeft = event;
-// }
-
-// function handle(delta) {
-//     var time = 1000;
-//     var distance = 800;
-
-//     $('html, body').stop().animate({
-//         scrollTop: $(window).scrollTop() - (distance * delta)
-//     }, time );
-// }
-
-// if (window.addEventListener) {window.addEventListener('DOMMouseScroll', wheel(100), false);}
-//   window.onmousewheel = document.onmousewheel = wheel(100);
 
