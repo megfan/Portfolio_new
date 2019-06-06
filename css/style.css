@@ -59,7 +59,7 @@ body{
 #loader_sec{
     height: 100vh;
     width: 100vw;
-    background-color: var(--primary);
+    background-color: black;
     z-index: 100;
     position: fixed;
     left: 0;
@@ -68,6 +68,9 @@ body{
     justify-content: center;
     align-items: center;
     transition: all 1s ease-out;
+}
+#loader_sec h4{
+    color: var(--primary);
 }
 .fade-up{
     transform: translateY(-100vh);
@@ -79,14 +82,14 @@ body{
     position: absolute;
     top: calc(50% - 17px);
     left: calc(50% - 35px);
-    background-color: var(--primary);
+    background-color: black;
 }
 #loader {
     width: 70px;
     height: 70px;
     border-style: solid;
-    border-top-color: white;
-    border-right-color: white;
+    border-top-color: var(--primary);
+    border-right-color: var(--primary);
     border-left-color: transparent;
     border-bottom-color: transparent;
     border-radius: 50%;
@@ -382,7 +385,10 @@ h1{
 }
 .resume{
     background-color: var(--dark-primary);
+}
+.resume a{
     color: white;
+    text-decoration: none;
 }
 .LinkedIn{
   
