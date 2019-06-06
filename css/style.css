@@ -385,6 +385,7 @@ h1{
 }
 .resume{
     background-color: var(--dark-primary);
+    color: white;
 }
 .resume a{
     color: white;
