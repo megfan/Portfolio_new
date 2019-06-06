@@ -19,10 +19,12 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
+    width: 100%;
 }
 .main-container{
     display: grid;
     grid-template-rows: 100vh 70vh repeat(3, auto) 10vh 0px;
+    width: 100vw;
 }
 :root{
     --dark-primary: #1C1C1C;
@@ -30,7 +32,7 @@ body{
     --secondary: #f2545b;
     --light_primary: #fafaff;
     --light-secondary: #c9c9c9;
-    --light-tertiary: #c9c9c9;
+    --light-tertiary: #808080;
     --grey: #565656;
 
     --container: 1500px;
@@ -56,6 +58,11 @@ body{
     z-index: 1;
     opacity: .4;
   }
+
+.fade-up{
+    transform: translateY(-100vh);
+}
+
 #loader_sec{
     height: 100vh;
     width: 100vw;
@@ -65,23 +72,24 @@ body{
     left: 0;
     top:0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all 1s ease-out;
 }
 #loader_sec h4{
     color: var(--primary);
-}
-.fade-up{
-    transform: translateY(-100vh);
+    margin-top: 1rem;
 }
 .pre-container{
     width: 70px;
     height: 35px;
     overflow: hidden;
-    position: absolute;
+    /* position: absolute;
     top: calc(50% - 17px);
-    left: calc(50% - 35px);
+    left: calc(50% - 35px); */
+    display: flex;
+
     background-color: black;
 }
 #loader {
@@ -102,6 +110,7 @@ body{
 
     -webkit-transform: rotate(-200deg);
 }
+
 @keyframes rotate{
     0% { border-width: 10px; }
     25% { border-width: 3px; }
@@ -585,8 +594,8 @@ h1{
 }
 .project__category {
     font-family: Lato;
-    font-size: 1.3rem;
-    color: var(--light-secondary);
+    font-size: 1.2rem;
+    color: var(--light-tertiary);
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.2;
@@ -731,9 +740,10 @@ footer{
 @media only screen and (max-width: 1200px) {
     :root{--container: 800px;}
     /* .header_title{grid-column: col-start 1 / col-end 4;} */
+    #loader_sec{padding:0;}
     .logo{position: relative;}
     .header_title h2{margin-right: 0;}
-    .scroll{grid-column: 1;}
+    .scroll{grid-column: 1/3;}
 
     .deco_line{display: none;}
     .header_title, .deco_title, .about_text, .btn_about{grid-column: 1/5; margin-left: 0;}
@@ -766,7 +776,8 @@ footer{
 }
 @media only screen and (max-width: 680px) {
     .header_title_first{font-size: 4rem; } 
-    body{grid-template-rows: 100vh repeat(4, auto) 15vh 0px;}
+    body{grid-template-rows: 100vh repeat(4, auto) 15vh 0px; width: 100vw;}
+    .main-container{width: 100vw; grid-template-rows: 100vh 90vh repeat(3, auto) 10vh 0px;}
     .about_sec, .work_sec{grid-template-rows: 5vh 30px repeat(2,auto);}
     .btn_about{display: block;}
     .btn_item{margin-bottom: 2rem;}
@@ -786,8 +797,12 @@ footer{
 
     footer{grid-template-rows: repeat(2, auto);}
     .contact_sec{grid-template-rows: 5vh 50px repeat(2,auto) 5vh;}
-    .social_box{grid-row: 1; grid-column: 1/3; justify-content: space-between; margin-top: 2rem;}
-    .footer_box{grid-row: 2; grid-column: 1/5;}
+    .social_box{grid-row: 1; grid-column: 2/4; justify-content: space-between; margin-top: 2rem;}
+    .footer_box{grid-row: 2; grid-column: 1/5; justify-content: center;}
+
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+      }
 }
 
 
